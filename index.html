@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>My Portfolio</title>
+    </head>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(85, 37, 85);
+            color: white;
+        }
+
+        .input {
+            text-align: center;
+            width: 500px;
+            height: auto;
+            padding left: 10px;
+            font-size: 15px;
+        }
+
+        .nav {
+            display: flex; gap: 70px;
+            background-color: rgb(194, 95, 194);
+            width: 100%;
+        }
+
+        .div1 {
+            font-size: 20px;
+        }
+
+        .div2 {
+            display: flex; justify-content: flex-start; gap: 20px;
+            font-size: 25px;
+        }
+
+        .div3 {
+            display: flex; justify-content: flex-end; gap: 20px;
+        }
+
+        .highlight {
+            cursor: pointer;
+        }
+
+        .highlight:hover {
+            color: blue;
+        }
+
+        .main {
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(231, 192, 231);
+            transition: background-color 0.5s ease;
+            width: 100%;
+            height: 30%;
+            padding: 30px 0 5px 0;
+        }
+
+        .main:hover {
+            background-color: rgb(243, 210, 233);
+        }
+
+        .h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .h2 {
+            font-weight: bold;
+            
+        }
+
+        .div4 {
+            display: flex; justify-content: center; gap: 10px;
+            font-size: 30px;
+
+        }
+
+        .round {
+            border: solid 2px rgb(104, 148, 104);
+            text-align: center;
+            padding: 20px 10px 0 10px;
+            background-color: rgb(104, 148, 104);
+            transition: background-color 0.5s ease-out;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .round:hover {
+            background-color: rgb(158, 228, 158);
+        }
+
+        .footer {
+            display: grid; grid-template-columns: 25% 25% 25%;
+            background-color: rgb(85, 37, 85);
+            transition: background-color 0.5s ease;
+            
+        }
+
+        .footer:hover {
+            background-color: rgb(243, 143, 193);
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(104, 40, 104);
+        }
+
+    </style>
+
+    <body>
+        <nav class="nav">
+            <div>
+                <img src="assets/profile.png" width="30px">
+            </div>
+            <div>
+                <input class="input" type="search" placeholder="jebatasnia.com"> 
+            </div>
+        </nav>
+        <br>
+        <div class="div1">
+            <div class="div2">
+                <div>Jeba Tasnia</div>
+                <div>Aspiring Web Developer</div>
+            </div>
+            <div class="div3">
+                <div class="highlight">Resume</div>
+                <div class="highlight">Projects</div>
+                <div class="highlight">Outreach</div>
+                <div class="highlight">Personal</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="main">
+            <div class="h1">Jeba Tasnia</div>
+            <div class="h2">A Bit About Me</div>
+            <div>I am currently pursuing a Bachelor of Social Science in Public Administration at Shahjalal University of Science and Technology,Sylhet. Additionally, I have a strong interest in web development.</div>
+        </div>
+        <br>
+        <br>
+        <div class="div4">
+            <div class="round" onclick="openCV()">Resume</div>
+            <div class="round">Projects</div>
+            <div class="round">Outreach</div>
+            <div class="round">Personal</div>
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+            <div>
+                <p class="bold">Email</p>
+                <p>
+                    <a href="mailto:jebatasniaanika78@gmail.com">jebatasniaanika78@gmail.com</a>
+                </p>
+            </div>
+            <div>
+                <p class="bold">GitHub</p>
+                <p>
+                    <a href="https://github.com/jeba-78">https://github.com/jeba-78</a>
+                </p>
+            </div>
+            <div>
+                <p class="bold">LinkedIn</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/jeba-tasnia-300815340/">https://www.linkedin.com/in/jeba-tasnia-300815340/</a>
+                </p>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function openCV() {
+            window.open('CV.pdf', '_blank');
+        }
+    </script>
+    
+</html>
